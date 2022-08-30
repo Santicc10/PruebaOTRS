@@ -1,0 +1,283 @@
+{
+  "id": "11927df8-d602-442c-ba07-bcb7273914f3",
+  "version": "2.0",
+  "name": "Creacion_Ticket_Helpdesk_OTRS",
+  "url": "http://srv-helpdesk.casablc.local",
+  "tests": [{
+    "id": "cd2be95c-96d8-44b3-a781-a3f5e5eeafad",
+    "name": "Creacion_ticket_Helpdesk_OTRS",
+    "commands": [{
+      "id": "fe8ce74b-4949-4914-aac7-424b56233a56",
+      "comment": "",
+      "command": "open",
+      "target": "/otrs/customer.pl?Action=Logout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2c939fa-4cb1-42d2-806a-04d17ffe499c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c20017cf-f4ad-4eb6-b141-40d888910b13",
+      "comment": "",
+      "command": "click",
+      "target": "id=User",
+      "targets": [
+        ["id=User", "id"],
+        ["name=User", "name"],
+        ["css=#User", "css:finder"],
+        ["xpath=//input[@id='User']", "xpath:attributes"],
+        ["xpath=//div[@id='Login']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "861253a8-7d4c-478b-86df-2be473383e79",
+      "comment": "",
+      "command": "type",
+      "target": "id=User",
+      "targets": [
+        ["id=User", "id"],
+        ["name=User", "name"],
+        ["css=#User", "css:finder"],
+        ["xpath=//input[@id='User']", "xpath:attributes"],
+        ["xpath=//div[@id='Login']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "auxinformatica"
+    }, {
+      "id": "770a88f0-ff91-4a28-bf7c-4e3134817175",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='Login']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "qwer123."
+    }, {
+      "id": "4edb597b-7e55-4d29-916c-b96d599723df",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(7) > button",
+      "targets": [
+        ["css=div:nth-child(7) > button", "css:finder"],
+        ["xpath=//button[@value='Iniciar sesión']", "xpath:attributes"],
+        ["xpath=//div[@id='Login']/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13d378a6-9d23-4e00-b540-c3d0eb88ae2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Todo (5)",
+      "targets": [
+        ["linkText=Todo (5)", "linkText"],
+        ["css=.Filter > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo (5)')]", "xpath:link"],
+        ["xpath=//div[@id='MainBox']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/otrs/customer.pl?Action=CustomerTicketOverview;Subaction=MyTickets;Filter=All;SortBy=;OrderBy=;')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc8d135e-7f42-4ffd-8ba5-d7fb19f38f31",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tickets",
+      "targets": [
+        ["linkText=Tickets", "linkText"],
+        ["css=.Selected > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Tickets')]", "xpath:link"],
+        ["xpath=//div[@id='Navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/otrs/customer.pl?Action=CustomerTicketOverview;Subaction=MyTickets')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tickets')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54e54a01-979c-43ed-9061-e39d833753dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo Ticket",
+      "targets": [
+        ["linkText=Nuevo Ticket", "linkText"],
+        ["css=.Expanded > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Ticket')]", "xpath:link"],
+        ["xpath=//div[@id='Navigation']/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/otrs/customer.pl?Action=CustomerTicketMessage')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Ticket')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b97b2126-e148-4116-ada2-7031d035a38d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Subject",
+      "targets": [
+        ["id=Subject", "id"],
+        ["name=Subject", "name"],
+        ["css=#Subject", "css:finder"],
+        ["xpath=//input[@id='Subject']", "xpath:attributes"],
+        ["xpath=//form[@id='NewCustomerTicket']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f5a9e2f-3e88-4b9a-98fc-8838177b5e68",
+      "comment": "",
+      "command": "type",
+      "target": "id=Subject",
+      "targets": [
+        ["id=Subject", "id"],
+        ["name=Subject", "name"],
+        ["css=#Subject", "css:finder"],
+        ["xpath=//input[@id='Subject']", "xpath:attributes"],
+        ["xpath=//form[@id='NewCustomerTicket']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Cable de Internet"
+    }, {
+      "id": "e4bc53c5-ded6-41b2-8be7-82a9455c7e4d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Formato",
+      "targets": [
+        ["linkText=Formato", "linkText"],
+        ["css=#cke_13 > .cke_combo_button", "css:finder"],
+        ["xpath=//a[@onclick='CKEDITOR.tools.callFunction(61,this);return false;']", "xpath:attributes"],
+        ["xpath=//span[@id='cke_13']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"javascript:void('Formato')\")]", "xpath:href"],
+        ["xpath=//span[3]/span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Formato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb16731e-5325-4cd5-9b13-dfc0bef6cfa6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "17e534a5-0579-417c-a5fe-49a3b87ff629",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b215e324-186b-4f7a-ba17-42e520ccb5a5",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.cke_editable",
+      "targets": [
+        ["css=.cke_editable", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Buenos dias, solicitamos su ayuda para el puesto del nuevo practicante, Necesita 2 puntos de conexion a interntet')]", "xpath:innerText"]
+      ],
+      "value": "Buenos dias, solicitamos su ayuda para el puesto del nuevo practicante, Necesita 2 puntos de conexion a interntet"
+    }, {
+      "id": "77fe9389-26d8-432d-9e46-f9d97167b351",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e0f34cf-1623-40ea-b737-a6a24ac5816e",
+      "comment": "",
+      "command": "click",
+      "target": "id=DynamicField_Area_Search",
+      "targets": [
+        ["id=DynamicField_Area_Search", "id"],
+        ["css=#DynamicField_Area_Search", "css:finder"],
+        ["xpath=//input[@id='DynamicField_Area_Search']", "xpath:attributes"],
+        ["xpath=//form[@id='NewCustomerTicket']/fieldset/div[6]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdd35f4c-285c-40e2-ac1d-fa6a4ba93636",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jstree-wholerow-hovered",
+      "targets": [
+        ["css=.jstree-wholerow-hovered", "css:finder"],
+        ["xpath=//li[@id='j1_11']/div", "xpath:idRelative"],
+        ["xpath=//li[11]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6314739e-965b-472c-b209-e7c4b6e599f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=DynamicField_NumContacto",
+      "targets": [
+        ["id=DynamicField_NumContacto", "id"],
+        ["name=DynamicField_NumContacto", "name"],
+        ["css=#DynamicField_NumContacto", "css:finder"],
+        ["xpath=//input[@id='DynamicField_NumContacto']", "xpath:attributes"],
+        ["xpath=//form[@id='NewCustomerTicket']/fieldset/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46259cd-2a93-45e6-9b03-b52b9b3d6b1a",
+      "comment": "",
+      "command": "type",
+      "target": "id=DynamicField_NumContacto",
+      "targets": [
+        ["id=DynamicField_NumContacto", "id"],
+        ["name=DynamicField_NumContacto", "name"],
+        ["css=#DynamicField_NumContacto", "css:finder"],
+        ["xpath=//input[@id='DynamicField_NumContacto']", "xpath:attributes"],
+        ["xpath=//form[@id='NewCustomerTicket']/fieldset/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "131"
+    }, {
+      "id": "4c8648b0-6880-4062-971e-1eed559b7ea1",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitRichText",
+      "targets": [
+        ["id=submitRichText", "id"],
+        ["css=#submitRichText", "css:finder"],
+        ["xpath=//button[@id='submitRichText']", "xpath:attributes"],
+        ["xpath=//div[@id='BottomActionRow']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "78c10851-7c6d-4f8a-867e-92d909681574",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd2be95c-96d8-44b3-a781-a3f5e5eeafad"]
+  }],
+  "urls": ["http://srv-helpdesk.casablc.local/"],
+  "plugins": []
+}
